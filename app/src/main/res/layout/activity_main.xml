@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:layout_marginTop="30dp"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Погода в городе"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginBottom="20dp"/>
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <EditText
-        android:id="@+id/editCity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Введите город"
-        android:inputType="textCapWords"/>
-    <Button
-        android:id="@+id/buttonWeather"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Узнать погоду"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Погода в городе"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
 
-    <TextView
-        android:id="@+id/textWeather"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Здесь появится информация о погоде"
-        android:textSize="18sp"
-        android:layout_marginTop="20dp"/>
-</LinearLayout>
+        <EditText
+            android:id="@+id/editCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введите город"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/buttonWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Узнать погоду"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/textWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Здесь появится информация о погоде"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
